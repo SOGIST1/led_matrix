@@ -32,11 +32,12 @@ git clone https://github.com/chigges/LitTime.git
 #define C   A2
 #define D   A3
 ```
-- Enjoy your clock!
+
+Enjoy your clock!
 
 ## Usage (Customize!)
 
-Feel free to modify the code to suit your needs!
+Feel free to modify the code to suit your needs.
 
 One way to do this is to change the colors of the LEDs. To do this, change this section of the code to hold the RGB values (0-4) of the colors you want:
 ```c
@@ -45,4 +46,4 @@ One way to do this is to change the colors of the LEDs. To do this, change this 
 #define background_color (matrix.Color333(1, 0, 0))
 ```
 
-Have fun! And happy hacking!
+Have fun and happy hacking!
