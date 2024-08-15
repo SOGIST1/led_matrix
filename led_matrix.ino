@@ -23,7 +23,8 @@
 RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false, 64);
 
 // numbers are allowed to be 14x32 with column 15 being reserved for spacing between numbers
-// orange #define outline_color    (matrix.Color333(0, 4, 3))
+// Here is where you would customize the colors on the display.
+// For example, orange would be: #define outline_color    (matrix.Color333(0, 4, 3))
 #define outline_color    (matrix.Color333(0, 0, 0))
 #define number_color     (matrix.Color333(1, 0, 0))
 #define background_color (matrix.Color333(1, 0, 0))
@@ -183,7 +184,7 @@ void draw_8(int x, int y) {
 	matrix.drawLine(x + 5, y + 3, x + 5, y + 8, number_color);
 	matrix.drawLine(x + 6, y + 2, x + 6, y + 7, number_color);
 	matrix.drawPixel(x + 6, y + 4, outline_color);
-	// ^ this can be optimized by drawing a big blue box and then redrawing the black inside of it.
+	// PERF: ^ this can be optimized by drawing a big blue box and then redrawing the black inside of it.
 }
 
 void draw_9(int x, int y) {
